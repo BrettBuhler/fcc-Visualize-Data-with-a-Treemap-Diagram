@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Data with a Treemap Diagram</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Video Game Sales</h1>
+        <p id="description">Top 100 most Sold Video Games Grouped by Platform</p>
+    </header>
+    <div id="tooltip"></div>
+    <svg></svg>
+    <svg id="legend">
+        <rect class="legend-item" fill="#9A86A4" height="20px" width="20px" x="0" y="0"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="20" y="15">Wii</text>
+        <rect class="legend-item" fill="#B1BCE6" height="20px" width="20px" x="0" y="20"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="20" y="35">GB</text>
+        <rect class="legend-item" fill="#B7E5DD" height="20px" width="20px" x="0" y="40"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="20" y="55">PS2</text>
+        <rect class="legend-item" fill="#F1F0C0" height="20px" width="20px" x="0" y="60"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="20" y="75">SNES</text>
+        <rect class="legend-item" fill="#5F7161" height="20px" width="20px" x="0" y="80"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="20" y="95">GBA</text>
+        <rect class="legend-item" fill="#6D8B74" height="20px" width="20px" x="0" y="100"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="20" y="115">2600</text>
+        <rect class="legend-item" fill="#97C4B8" height="20px" width="20px" x="100" y="0"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="120" y="15">DS</text>
+        <rect class="legend-item" fill="#8CC0DE" height="20px" width="20px" x="100" y="20"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="120" y="35">PS3</text>
+        <rect class="legend-item" fill="#354259" height="20px" width="20px" x="100" y="40"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="120" y="55">3DS</text>
+        <rect class="legend-item" fill="#FF8AAE" height="20px" width="20px" x="100" y="60"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="120" y="75">PS</text>
+        <rect class="legend-item" fill="#BB6464" height="20px" width="20px" x="100" y="80"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="120" y="95">XB</text>
+        <rect class="legend-item" fill="#A97155" height="20px" width="20px" x="100" y="100"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="120" y="115">PSP</text>
+        <rect class="legend-item" fill="#6867AC" height="20px" width="20px" x="200" y="0"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="220" y="15">X360</text>
+        <rect class="legend-item" fill="#A267AC" height="20px" width="20px" x="200" y="20"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="220" y="35">NES</text>
+        <rect class="legend-item" fill="#632626" height="20px" width="20px" x="200" y="40"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="220" y="55">PS4</text>
+        <rect class="legend-item" fill="#7897AB" height="20px" width="20px" x="200" y="60"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="220" y="75">N64</text>
+        <rect class="legend-item" fill="#54BAB9" height="20px" width="20px" x="200" y="80"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="220" y="95">PC</text>
+        <rect class="legend-item" fill="#886F6F" height="20px" width="20px" x="200" y="100"></rect><text width="80px" height="20px" fill="black" font-family="Courier New" x="220" y="115">XOne</text>
+    </svg>
+</body>
+<script src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

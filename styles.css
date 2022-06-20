@@ -1,0 +1,39 @@
+svg {
+    background: linear-gradient(32deg, rgba(69, 8, 168, 0.202), rgb(23, 1, 65));
+    border: 2px solid black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 80vw;
+    text-align: center;
+    background: linear-gradient(#FCFFA6, #E0C097);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    color: rgb(11, 1, 20);
+    font-family: 'Courier New', Courier, monospace;
+}
+html {
+    background: radial-gradient(rgba(88, 137, 234, 0.775), rgb(2, 1, 36));
+}
+#legend {
+    background: #FCFFA6;
+}
+#tooltip{
+    visibility: hidden;
+    height: 40px;
+    width: 300px;
+    background-color: #FCFFA6;
+    z-index: 1;
+    border-radius: 5px;
+    position: absolute;
+    border: 1px solid black;
+}
+.tile:hover{
+    fill:rgba(109, 80, 17, 0.239)
+}
